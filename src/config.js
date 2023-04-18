@@ -1,7 +1,8 @@
+const BrowserFS = require("browserfs");
 const domAccessibilityApi = (() => {
   var __getOwnPropNames = Object.getOwnPropertyNames;
   var __commonJS = (cb, mod) =>
-    function __require() {
+    function __require(js) {
       return (
         mod ||
           (0, cb[__getOwnPropNames(cb)[0]])(
@@ -15,7 +16,7 @@ const domAccessibilityApi = (() => {
   // dist/polyfills/array.from.js
   var require_array_from = __commonJS({
     "dist/polyfills/array.from.js"(exports) {
-      "use strict";
+      
       exports.__esModule = true;
       exports.default = arrayFrom;
       var toStr = Object.prototype.toString;
@@ -76,7 +77,7 @@ const domAccessibilityApi = (() => {
   // dist/polyfills/SetLike.js
   var require_SetLike = __commonJS({
     "dist/polyfills/SetLike.js"(exports) {
-      "use strict";
+      
       exports.__esModule = true;
       exports.default = void 0;
       function _typeof(obj) {
@@ -216,7 +217,7 @@ const domAccessibilityApi = (() => {
   // dist/getRole.js
   var require_getRole = __commonJS({
     "dist/getRole.js"(exports) {
-      "use strict";
+      
       exports.__esModule = true;
       exports.default = getRole;
       exports.getLocalName = getLocalName;
@@ -429,7 +430,7 @@ const domAccessibilityApi = (() => {
   // dist/util.js
   var require_util = __commonJS({
     "dist/util.js"(exports) {
-      "use strict";
+      
       function _typeof(obj) {
         "@babel/helpers - typeof";
         return (
@@ -602,7 +603,7 @@ const domAccessibilityApi = (() => {
   // dist/accessible-name-and-description.js
   var require_accessible_name_and_description = __commonJS({
     "dist/accessible-name-and-description.js"(exports) {
-      "use strict";
+      
       exports.__esModule = true;
       exports.computeTextAlternative = computeTextAlternative;
       var _array = _interopRequireDefault(require_array_from());
@@ -1137,7 +1138,7 @@ const domAccessibilityApi = (() => {
   // dist/accessible-description.js
   var require_accessible_description = __commonJS({
     "dist/accessible-description.js"(exports) {
-      "use strict";
+      
       exports.__esModule = true;
       exports.computeAccessibleDescription = computeAccessibleDescription;
       var _accessibleNameAndDescription = require_accessible_name_and_description();
@@ -1252,7 +1253,7 @@ const domAccessibilityApi = (() => {
   // dist/accessible-name.js
   var require_accessible_name = __commonJS({
     "dist/accessible-name.js"(exports) {
-      "use strict";
+      
       exports.__esModule = true;
       exports.computeAccessibleName = computeAccessibleName;
       var _accessibleNameAndDescription = require_accessible_name_and_description();
@@ -1289,7 +1290,7 @@ const domAccessibilityApi = (() => {
   // dist/is-inaccessible.js
   var require_is_inaccessible = __commonJS({
     "dist/is-inaccessible.js"(exports) {
-      "use strict";
+      
       exports.__esModule = true;
       exports.isInaccessible = isInaccessible;
       exports.isSubtreeInaccessible = isSubtreeInaccessible;
