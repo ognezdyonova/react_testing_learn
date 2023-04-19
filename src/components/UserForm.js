@@ -4,19 +4,21 @@ function UserForm({onUserAdd}) {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
 
-    const handlerSubmit = (event)=>{
+    const handlerSubmit = (event) => {
         event.preventDefault();
-        console.log(name,email);
-        onUserAdd({name,email});
+        console.log(name, email);
+        onUserAdd({name, email});
+        setEmail('');
+        setName('');
     }
     return <form onSubmit={handlerSubmit}>
         <div>
-            <label>Name</label>
-            <input value={name} onChange={e=>setName(e.target.value)} data-testid={'name'}/>
+            <label htmlFor='name'>Name</label>
+            <input id='name' value={name} onChange={e => setName(e.target.value)} data-testid={'name'}/>
         </div>
         <div>
-            <label>Email</label>
-            <input value={email} onChange={e=>setEmail(e.target.value)} data-testid={'email'}/>
+            <label htmlFor='email'>Email</label>
+            <input id='email' value={email} onChange={e => setEmail(e.target.value)} data-testid={'email'}/>
         </div>
 
         <button data-testid={'submitButton'}>Add User</button>
