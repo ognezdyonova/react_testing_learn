@@ -12,14 +12,14 @@ function UserForm({onUserAdd}) {
     return <form onSubmit={handlerSubmit}>
         <div>
             <label>Name</label>
-            <input value={name} onChange={e=>setName(e.target.value)}/>
+            <input value={name} onChange={e=>setName(e.target.value)} data-testid={'name'}/>
         </div>
         <div>
             <label>Email</label>
-            <input value={email} onChange={e=>setEmail(e.target.value)}/>
+            <input value={email} onChange={e=>setEmail(e.target.value)} data-testid={'email'}/>
         </div>
 
-        <button>Add User</button>
+        <button data-testid={'submitButton'}>Add User</button>
     </form>
 }
 

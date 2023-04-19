@@ -2,6 +2,7 @@ import "./styles.css";
 import UserForm from "./components/UserForm";
 import {useState} from "react";
 import UserList from "./components/UserList";
+import ProductList from "./components/ProductList";
 
 export default function App() {
     const [users, setUsers] = useState([]);
@@ -13,6 +14,9 @@ export default function App() {
             <UserForm onUserAdd={onUserAdd}/>
             <hr/>
             <UserList users={users}/>
+            <hr/>
+            <ProductList/>
         </div>
+
     );
 }
