@@ -1,12 +1,21 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App";
+import './index.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { SWRConfig } from 'swr';
+import App from './App';
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
+const config = {
+  revalidateIfStale: false,
+  revalidateOnFocus: false,
+  revalidateOnReconnect: false,
+  throwOnError: false,
+};
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
+  <React.StrictMode>
+    <SWRConfig value={config}>
+      <App />
+    </SWRConfig>
+  </React.StrictMode>
 );
