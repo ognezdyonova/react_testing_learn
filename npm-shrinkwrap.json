@@ -12,6 +12,7 @@
         "@faker-js/faker": "7.6.0",
         "@monaco-editor/react": "^4.5.0",
         "@primer/octicons-react": "^18.3.0",
+        "@prisma/client": "^4.13.0",
         "@tailwindcss/forms": "^0.5.3",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^14.0.0",
@@ -4182,11 +4183,36 @@
         "react": ">=15"
       }
     },
+    "node_modules/@prisma/client": {
+      "version": "4.13.0",
+      "resolved": "https://registry.npmjs.org/@prisma/client/-/client-4.13.0.tgz",
+      "integrity": "sha512-YaiiICcRB2hatxsbnfB66uWXjcRw3jsZdlAVxmx0cFcTc/Ad/sKdHCcWSnqyDX47vAewkjRFwiLwrOUjswVvmA==",
+      "hasInstallScript": true,
+      "dependencies": {
+        "@prisma/engines-version": "4.13.0-50.1e7af066ee9cb95cf3a403c78d9aab3e6b04f37a"
+      },
+      "engines": {
+        "node": ">=14.17"
+      },
+      "peerDependencies": {
+        "prisma": "*"
+      },
+      "peerDependenciesMeta": {
+        "prisma": {
+          "optional": true
+        }
+      }
+    },
     "node_modules/@prisma/engines": {
       "version": "4.13.0",
       "resolved": "https://registry.npmjs.org/@prisma/engines/-/engines-4.13.0.tgz",
       "integrity": "sha512-HrniowHRZXHuGT9XRgoXEaP2gJLXM5RMoItaY2PkjvuZ+iHc0Zjbm/302MB8YsPdWozAPHHn+jpFEcEn71OgPw==",
       "hasInstallScript": true
+    },
+    "node_modules/@prisma/engines-version": {
+      "version": "4.13.0-50.1e7af066ee9cb95cf3a403c78d9aab3e6b04f37a",
+      "resolved": "https://registry.npmjs.org/@prisma/engines-version/-/engines-version-4.13.0-50.1e7af066ee9cb95cf3a403c78d9aab3e6b04f37a.tgz",
+      "integrity": "sha512-fsQlbkhPJf08JOzKoyoD9atdUijuGBekwoOPZC3YOygXEml1MTtgXVpnUNchQlRSY82OQ6pSGQ9PxUe4arcSLQ=="
     },
     "node_modules/@remix-run/router": {
       "version": "1.5.0",
@@ -25069,10 +25095,23 @@
       "integrity": "sha512-kOoc4wrBw3bPe2ZPj9BmCwXdEkw8hxUX/tFCvcjOsZ6eywaQXm3PR0yZnPZxZ8o4RFj2tdg/cwGr4+cU83weHw==",
       "requires": {}
     },
+    "@prisma/client": {
+      "version": "4.13.0",
+      "resolved": "https://registry.npmjs.org/@prisma/client/-/client-4.13.0.tgz",
+      "integrity": "sha512-YaiiICcRB2hatxsbnfB66uWXjcRw3jsZdlAVxmx0cFcTc/Ad/sKdHCcWSnqyDX47vAewkjRFwiLwrOUjswVvmA==",
+      "requires": {
+        "@prisma/engines-version": "4.13.0-50.1e7af066ee9cb95cf3a403c78d9aab3e6b04f37a"
+      }
+    },
     "@prisma/engines": {
       "version": "4.13.0",
       "resolved": "https://registry.npmjs.org/@prisma/engines/-/engines-4.13.0.tgz",
       "integrity": "sha512-HrniowHRZXHuGT9XRgoXEaP2gJLXM5RMoItaY2PkjvuZ+iHc0Zjbm/302MB8YsPdWozAPHHn+jpFEcEn71OgPw=="
+    },
+    "@prisma/engines-version": {
+      "version": "4.13.0-50.1e7af066ee9cb95cf3a403c78d9aab3e6b04f37a",
+      "resolved": "https://registry.npmjs.org/@prisma/engines-version/-/engines-version-4.13.0-50.1e7af066ee9cb95cf3a403c78d9aab3e6b04f37a.tgz",
+      "integrity": "sha512-fsQlbkhPJf08JOzKoyoD9atdUijuGBekwoOPZC3YOygXEml1MTtgXVpnUNchQlRSY82OQ6pSGQ9PxUe4arcSLQ=="
     },
     "@remix-run/router": {
       "version": "1.5.0",
