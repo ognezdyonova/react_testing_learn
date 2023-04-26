@@ -3,44 +3,6 @@ import HomeRoute from "../routes/HomeRoute";
 import {MemoryRouter} from "react-router-dom";
 import {createServer} from "./mock_server/server";
 
-
-// const handlers = [
-//     rest.get('api/repositories', (req, res, context) => {
-//         const query = req.url.searchParams.get('q');
-//         const language = query.split("language:")[1];
-//         return res(
-//             context.json({
-//                 items: [
-//                     {id: 1, full_name: `${language}/test1`},
-//                     {id: 2, full_name: `${language}/test2`},
-//                     {id: 3, full_name: `${language}/test3`},
-//                     {id: 4, full_name: `${language}/test4`},
-//                     {id: 5, full_name: `${language}/test5`},
-//                     {id: 6, full_name: `${language}/test6`},
-//                     {id: 7, full_name: `${language}/test7`},
-//                     {id: 8, full_name: `${language}/test8`},
-//                     {id: 9, full_name: `${language}/test9`},
-//                     {id: 10, full_name: `${language}/test1`},
-//                 ]
-//             })
-//         )
-//     })
-// ];
-//
-// const server = setupServer(...handlers);
-//
-// beforeAll(() => {
-//     server.listen();
-// });
-//
-// afterEach(() => {
-//     server.resetHandlers();
-// });
-//
-// afterAll(() => {
-//     server.close();
-// });
-
 createServer([
     {
         path: 'api/repositories',
